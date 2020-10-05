@@ -17,4 +17,4 @@ There is also the possibility to run it in a docker container.
 * start the Server with dotnet DummyServer.dll
 
 # Device Configuration
-For the Device Configuration use my ConfigTool. https://github.com/emtek-at/GreeAC-ConfigTool
+For the Device Configuration use ConfigTool. https://github.com/Hagakurje/GreeAC-ConfigTool
