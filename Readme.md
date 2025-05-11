@@ -1,7 +1,7 @@
 # Gree Dummy Server
 Based on https://github.com/emtek-at/GreeAC-DummyServer
 Changes:
-* update .net core from 2.2 to 3.1
+* update .net core from 3.1 to 8.0
 * docker file for raspberry pi
 
 This project makes it possible to block all Internet traffic from your Gree AC Devices. 
