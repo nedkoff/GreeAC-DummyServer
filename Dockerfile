@@ -14,7 +14,7 @@ WORKDIR /app
 COPY --from=build /app .
 
 EXPOSE 5000
-ENV DOMAIN_NAME=emtek.at
+ENV DOMAIN_NAME=my.gree.com
 ENV EXTERNAL_IP=172.16.1.1
 
 ENTRYPOINT ["dotnet", "DummyServer.dll"]
