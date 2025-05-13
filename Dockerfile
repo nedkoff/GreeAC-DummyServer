@@ -4,7 +4,7 @@ WORKDIR /source
 
 COPY . ./
 
-RUN dotnet restore -r linux-arm64
+RUN dotnet restore
 RUN dotnet publish -c Release -o /app -r linux-arm64 --self-contained false
 
 # STAGE 2: Runtime
