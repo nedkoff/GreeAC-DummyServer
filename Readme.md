@@ -11,7 +11,12 @@ There is also the possibility to run it in a docker container.
 # Installation
 * You have to run your own DNS Server. Add an entry for the Dummy Server like gree.example.com and point it to the IP Address running the Server.
 #### Docker
-* `docker run -d --restart=always -e DOMAIN_NAME=gree.example.com -e EXTERNAL_IP=172.16.1.1 -p 5000:5000 hagakurje/greeac-dummyserver:latest`
+* `sudo docker build -t greeac-dummyserver:net8-arm64 .`
+* `sudo docker run -d --restart=always \
+  -e DOMAIN_NAME=my.gree.com \
+  -e EXTERNAL_IP=172.0.0.4 \
+  -p 5000:5000 \
+  greeac-dummyserver:net8-arm64`
 #### Bare Metal
 * set the environment variables DOMAIN_NAME, and EXTERNAL_IP to the same values as your DNS Record
 * start the Server with dotnet DummyServer.dll
